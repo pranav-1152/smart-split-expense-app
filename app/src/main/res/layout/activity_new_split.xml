@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAB40"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etTripName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Trip or Event Name"
+            android:textColor="#070505"
+            android:textColorHint="#070505" />
+
+        <EditText
+            android:id="@+id/etNumPersons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="How many people?"
+            android:inputType="number"
+            android:textColor="#070505"
+            android:textColorHint="#070505" />
+
+        <Button
+            android:id="@+id/btnAddPersons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Persons" />
+
+        <LinearLayout
+            android:id="@+id/layoutPersons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnCalculateSplit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Split" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Result will appear here"
+            android:textColor="#070505"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

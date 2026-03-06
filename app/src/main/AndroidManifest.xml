@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smartsplit">
+
+    ```
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SmartSplit"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Smartsplit">
+
+        <!-- 🔹 HomeActivity launches first -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 🔹 About -->
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+
+        <!-- 🔹 New Split -->
+        <activity
+            android:name=".NewSplitActivity"
+            android:exported="false" />
+
+        <!-- 🔹 View Splits -->
+        <activity
+            android:name=".ViewSplitsActivity"
+            android:exported="false" />
+
+        <!-- 🔹 Profile -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditSplitActivity"
+            android:exported="false"/>
+
+    </application>
+    ```
+
+</manifest>
